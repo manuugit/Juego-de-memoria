@@ -1,4 +1,5 @@
 :root {
+    /* largo y ancho de las tarjetas */
     --w: calc(70vw / 6);
     --h: calc(70vh / 4);
 }
@@ -10,7 +11,7 @@
 body {
     padding: 0;
     margin: 0;
-    -webkit-perspective: 1000;
+    -webkit-perspective: 1000; /* animacion 3ds */
     background: #471069;
     min-height: 100vh;
     display: flex;
@@ -18,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: calibri;
+    font-family: 'Kanit', sans-serif;
 }
 
 div {
@@ -67,6 +68,7 @@ div {
     border: white 5px solid;
     font-size: 130%;
 }
+
 
 @keyframes iniciar {
 

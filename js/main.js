@@ -1,5 +1,6 @@
 let iconos = []
         let selecciones = []
+        let cantidadTarjetas = 24;
 
         generarTablero()
 
@@ -26,7 +27,7 @@ let iconos = []
             selecciones = []
             let tablero = document.getElementById("tablero")
             let tarjetas = []
-            for (let i = 0; i < 24; i++) {
+            for (let i = 0; i < cantidadTarjetas; i++) {
                 tarjetas.push(`
                 <div class="area-tarjeta" onclick="seleccionarTarjeta(${i})">
                     <div class="tarjeta" id="tarjeta${i}">
@@ -72,5 +73,21 @@ let iconos = []
                     trasera1.style.background = "plum"
                     trasera2.style.background = "plum"
                 }
+
+                if(validarFinJuego()){
+                    //mostrar mensaje
+                   alert("¡Muy bien! Terminó el juego")
+                }
             }, 1000);
+
+        }
+
+        function validarFinJuego(){
+            for (let i=0; i< cantidadTarjetas; i++){
+                let ttrasera = document.getElementById("trasera"+i);
+                if (ttrasera.style.background != "plum"){
+                    return false;
+                }
+            }
+            return true;
         }

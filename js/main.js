@@ -5,7 +5,7 @@ let iconos = []
 
         function cargarIconos() {
             iconos = [
-                '<i class="fas fa-star"></i>',
+                '<img src="img/au.png" width="80%">',
                 '<i class="far fa-star"></i>',
                 '<i class="fas fa-star-of-life"></i>',
                 '<i class="fas fa-star-and-crescent"></i>',
@@ -17,6 +17,7 @@ let iconos = []
                 '<i class="fas fa-chess-knight"></i>',
                 '<i class="fas fa-chess"></i>',
                 '<i class="fas fa-dice-d20"></i>',
+        
             ]
         }
 

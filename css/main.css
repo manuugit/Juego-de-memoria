@@ -63,15 +63,53 @@ div {
     background: linear-gradient(#ebe3a0, #e9ba60);
 }
 
-.nuevo-juego {
+#nuevo-juego {
     cursor: pointer;
     background: linear-gradient(#E8DE87, #FFDFA1);
     padding: 20px;
     border-radius: 25px;
     border: white 5px solid;
     font-size: 3rem;
+    width: 290px;
+    margin-top: 200px;
 }
 
+#nuevo-juego.mostrar{
+    margin-top: 50px;
+}
+
+.record {
+    cursor: pointer;
+    background: linear-gradient(#E8DE87, #FFDFA1);
+    padding: 20px;
+    border-radius: 25px;
+    border: white 5px solid;
+    font-size: 3rem;
+    margin-top: 30px;
+    width: 290px;
+}
+
+#icono-principal{
+    width: 80%;
+}
+
+#icono-principal img{
+    width: 100%;
+    border-radius: 25%;
+}
+
+#icono-principal.hide{
+    display: none;
+}
+
+h1{
+    font-size: 5rem;
+    border-bottom: 1px solid black;
+}
+
+h1.hide{
+    display: none;
+}
 
 @keyframes iniciar {
 

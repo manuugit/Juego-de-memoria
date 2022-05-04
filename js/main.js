@@ -21,6 +21,12 @@ function cargarIconos() {
 }
 
 function generarTablero() {
+    let icono = document.getElementById("icono-principal");
+    icono.classList.add("hide");
+    let titulo = document.getElementById("titulo");
+    titulo.classList.add("hide");
+    let boton = document.getElementById("nuevo-juego");
+    boton.classList.add("mostrar");
     cargarIconos()
     selecciones = []
     let tablero = document.getElementById("tablero")

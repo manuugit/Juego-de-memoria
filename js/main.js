@@ -4,19 +4,18 @@ let cantidadTarjetas = 24;
 
 function cargarIconos() {
     iconos = [
-        '<img src="img/au.png" width="80%">',
-        '<i class="far fa-star"></i>',
-        '<i class="fas fa-star-of-life"></i>',
-        '<i class="fas fa-star-and-crescent"></i>',
-        '<i class="fab fa-old-republic"></i>',
-        '<i class="fab fa-galactic-republic"></i>',
-        '<i class="fas fa-sun"></i>',
-        '<i class="fas fa-stroopwafel"></i>',
-        '<i class="fas fa-dice"></i>',
-        '<i class="fas fa-chess-knight"></i>',
-        '<i class="fas fa-chess"></i>',
-        '<i class="fas fa-dice-d20"></i>',
-
+        '<img src="img/smartphone.png" width="30%">',
+        '<img src="img/bluetooth.png" width="30%">',
+        '<img src="img/database.png" width="30%">',
+        '<img src="img/html.png" width="30%">',
+        '<img src="img/java.png" width="30%">',
+        '<img src="img/network-server.png" width="30%">',
+        '<img src="img/ordenador-personal.png" width="30%">',
+        '<img src="img/programming.png" width="30%">',
+        '<img src="img/python.png" width="30%">',
+        '<img src="img/router-de-wifi.png" width="30%">',
+        '<img src="img/servidor.png" width="30%">',
+        '<img src="img/wifi.png" width="30%">',
     ]
 }
 

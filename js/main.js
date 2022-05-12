@@ -4,18 +4,18 @@ let cantidadTarjetas = 24;
 
 function cargarIconos() {
     iconos = [
-        '<img src="img/smartphone.png" width="30%">',
-        '<img src="img/bluetooth.png" width="30%">',
-        '<img src="img/database.png" width="30%">',
-        '<img src="img/html.png" width="30%">',
-        '<img src="img/java.png" width="30%">',
-        '<img src="img/network-server.png" width="30%">',
-        '<img src="img/ordenador-personal.png" width="30%">',
-        '<img src="img/programming.png" width="30%">',
-        '<img src="img/python.png" width="30%">',
-        '<img src="img/router-de-wifi.png" width="30%">',
-        '<img src="img/servidor.png" width="30%">',
-        '<img src="img/wifi.png" width="30%">',
+        '<img src="img/smartphone.png" width="50%">',
+        '<img src="img/bluetooth.png" width="50%">',
+        '<img src="img/database.png" width="50%">',
+        '<img src="img/html.png" width="50%">',
+        '<img src="img/java.png" width="50%">',
+        '<img src="img/network-server.png" width="50%">',
+        '<img src="img/ordenador-personal.png" width="50%">',
+        '<img src="img/programming.png" width="50%">',
+        '<img src="img/python.png" width="50%">',
+        '<img src="img/router-de-wifi.png" width="50%">',
+        '<img src="img/servidor.png" width="50%">',
+        '<img src="img/wifi.png" width="50%">',
     ]
 }
 
@@ -79,7 +79,13 @@ function deseleccionar(selecciones) {
 
         if(validarFinJuego()){
             //mostrar mensaje
-            alert("¡Muy bien! Terminó el juego")
+            if(localStorage.getItem("record") == null){
+                localStorage.setItem("record", 0);
+            }
+            let rec = localStorage.getItem("record");
+            let numrec = Number(rec) + 1;
+            localStorage.setItem("record", numrec);
+            alert("¡Muy bien! Terminó el juego \nNuevo Record!")
         }
     }, 1000);
 
@@ -88,9 +94,22 @@ function deseleccionar(selecciones) {
 function validarFinJuego(){
     for (let i=0; i< cantidadTarjetas; i++){
         let ttrasera = document.getElementById("trasera"+i);
-        if (ttrasera.style.background != "plum"){
+        console.log(ttrasera);
+        if (ttrasera.style.background != "rgb(182, 255, 252)"){
             return false;
         }
     }
     return true;
+}
+
+function verRecord(){
+    if(localStorage.getItem("record") == null){
+        localStorage.setItem("record", 0);
+        alert("Record: 0");
+    }
+    else{
+        let rec = localStorage.getItem("record");
+        alert("Record: "+ rec + "!")
+    }
+
 }

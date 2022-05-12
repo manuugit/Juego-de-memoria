@@ -73,8 +73,8 @@ function deseleccionar(selecciones) {
             tarjeta1.style.transform = "rotateY(0deg)"
             tarjeta2.style.transform = "rotateY(0deg)"
         }else{
-            trasera1.style.background = "#D4FFAD"
-            trasera2.style.background = "#D4FFAD"
+            trasera1.style.background = "#b6fffc"
+            trasera2.style.background = "#b6fffc"
         }
 
         if(validarFinJuego()){

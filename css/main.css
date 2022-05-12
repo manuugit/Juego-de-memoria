@@ -12,7 +12,7 @@ body {
     padding: 0;
     margin: 0;
     -webkit-perspective: 1000; /* animacion 3ds */
-    background: #562c2c;
+    background: #273854;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -55,23 +55,24 @@ div {
 }
 
 .trasera {
-    background-color: #e26d5c;
+    background-color: #d8defd;
     transform: rotateY(180deg);
 }
 
 .superior {
-    background: linear-gradient(#f5dfbb, #f5dfbb);
+    background: linear-gradient(#95c8e1, #d7d7d7);
 }
 
 #nuevo-juego {
     cursor: pointer;
-    background: linear-gradient(#E8DE87, #FFDFA1);
+    background: linear-gradient(#4774b9, #0d111761);
     padding: 20px;
     border-radius: 25px;
     border: white 5px solid;
     font-size: 3rem;
     width: 290px;
     margin-top: 200px;
+    color: white;
 }
 
 #nuevo-juego.mostrar{
@@ -80,13 +81,14 @@ div {
 
 .record {
     cursor: pointer;
-    background: linear-gradient(#E8DE87, #FFDFA1);
+    background: linear-gradient(#4774b9, #0d111761);
     padding: 20px;
     border-radius: 25px;
     border: white 5px solid;
     font-size: 3rem;
     margin-top: 30px;
     width: 290px;
+    color: white;
 }
 
 #icono-principal{
@@ -95,7 +97,7 @@ div {
 
 #icono-principal img{
     width: 100%;
-    border-radius: 25%;
+    border-radius: 55%;
 }
 
 #icono-principal.hide{
@@ -104,7 +106,8 @@ div {
 
 h1{
     font-size: 5rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
+    color: #f9f6f6;
 }
 
 h1.hide{

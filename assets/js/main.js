@@ -73,8 +73,8 @@ function deseleccionar(selecciones) {
             tarjeta1.style.transform = "rotateY(0deg)"
             tarjeta2.style.transform = "rotateY(0deg)"
         }else{
-            trasera1.style.background = "#b6fffc"
-            trasera2.style.background = "#b6fffc"
+            trasera1.style.background = "#72ffcb"
+            trasera2.style.background = "#72ffcb"
         }
 
         if(validarFinJuego()){
@@ -95,7 +95,7 @@ function validarFinJuego(){
     for (let i=0; i< cantidadTarjetas; i++){
         let ttrasera = document.getElementById("trasera"+i);
         console.log(ttrasera);
-        if (ttrasera.style.background != "rgb(182, 255, 252)"){
+        if (ttrasera.style.background != "rgb(114, 255, 203)"){
             return false;
         }
     }

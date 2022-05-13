@@ -1,0 +1,32 @@
+{
+  "name": "memorit",
+  "version": "1.0.0",
+  "description": "Memorit el juego de memoria con tematica Tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuugit/Juego-de-memoria.git"
+  },
+  "keywords": [
+    "Game",
+    "Memory",
+    "Memorit",
+    "Cards"
+  ],
+  "author": "Ralph Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manuugit/Juego-de-memoria/issues"
+  },
+  "homepage": "https://github.com/manuugit/Juego-de-memoria#readme",
+  "dependencies": {
+    "@capacitor/android": "^3.5.1",
+    "@capacitor/core": "^3.5.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.5.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "appId": "co.edu.upb.memorit",
+  "appName": "Memorit",
+  "webDir": "assets",
+  "bundledWebRuntime": false
+}
